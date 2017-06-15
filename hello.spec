@@ -1,16 +1,18 @@
 Name:           hello
-Version:
+Version:        2.10
 Release:        1%{?dist}
-Summary:
+Summary:        The "Hello World" program from GNU
 
-License:
-URL:
-Source0:
+License:        GPLv3+
+URL:            https://www.gnu.org/software/hello/
+Source0:        https://ftp.gnu.org/gnu/hello/hello-%{version}.tar.gz
 
 BuildRequires:
 Requires:
 
 %description
+The "Hello World" program, done with all bells and whistles of a proper FOSS
+project, including configuration, build, internationalization, help files, etc.
 
 
 %prep
@@ -34,5 +36,5 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Thu Jun 15 2017 Hui Tang <duriantang@gmail.com>
--
+* Thu Jun 15 2017 Hui Tang <duriantang@gmail.com> - 2.10-1
+- Initial version of the package
