@@ -30,7 +30,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %files
-%license add-license-file-here
+%license LICENSE
 %doc add-docs-here
 
 
