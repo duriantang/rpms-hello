@@ -7,8 +7,8 @@ License:        GPLv3+
 URL:            https://www.gnu.org/software/hello/
 Source0:        https://ftp.gnu.org/gnu/hello/hello-%{version}.tar.gz
 
-BuildRequires:
-Requires:
+# BuildRequires:
+# Requires:
 
 %description
 The "Hello World" program, done with all bells and whistles of a proper FOSS
