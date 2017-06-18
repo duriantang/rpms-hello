@@ -4,8 +4,8 @@ Release:        1%{?dist}
 Summary:        The "Hello World" program from GNU
 
 License:        GPLv3+
-URL:            https://www.gnu.org/software/hello/
-Source0:        https://ftp.gnu.org/gnu/hello/hello-%{version}.tar.gz
+URL:            https://ftp.gnu.org/gnu/%{name}
+Source0:        https://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
 
 # BuildRequires:
 # Requires:
