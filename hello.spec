@@ -27,11 +27,16 @@ project, including configuration, build, internationalization, help files, etc.
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
+%find_lang %{name}
+rm -f %{buildroot}/%{_infodir}/dir
 
 
-%files
-%license LICENSE
-%doc add-docs-here
+%files -f %{name}.lang
+%license COPYING
+%doc AUTHORS ChangeLog NEWS README THANKS TODO
+%{_bindir}/hello
+%{_infodir}/hello.info.*
+%{_mandir}/man1/hello.1.*
 
 
 
