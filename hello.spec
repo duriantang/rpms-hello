@@ -30,6 +30,13 @@ rm -rf $RPM_BUILD_ROOT
 %find_lang %{name}
 rm -f %{buildroot}/%{_infodir}/dir
 
+%post
+/sbin/install-info %{_infodir}/%{name}.info %{_infodir}/dir || :
+
+%preun
+if [ $1 = 0 ] ; then
+/sbin/install-info --delete %{_infodir}/%{name}.info %{_infodir}/dir || :
+fi
 
 %files -f %{name}.lang
 %license COPYING
